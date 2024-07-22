@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+body{
+    background-image: url(https://wallpaperswide.com/download/black_coffee_2-wallpaper-5120x2880.jpg);
+}
+
+#color {
+    color: aliceblue;
+}
+
+#box-shadow {
+    
+    box-shadow: 0px 0px 30px #ece5f2;
+}
+
+#logo img {
+    height: 40px;
+
+
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    margin-right: 20px;
+
+    cursor: pointer;
+}
+
+
+
+
+.contain
+{
+    padding: 20px;
+    font-size: larger;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+}
+.items li a
+{
+    text-decoration:none;
+    color: rgb(190, 85, 9);
+    font-size: larger;
+}
+.items li a:hover
+{
+    text-decoration: underline;
+    text-decoration-color: #2a0c04;
+    color: rgb(175, 32, 32);
+}
+.main_heading
+{
+    color: #F16341;
+    margin-left:15px ;
+    font-weight: 600;
+}
+.main_heading:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color:#4C3935;
+}
+.card
+{
+    transition: transform .25s;
+    cursor: pointer;
+    margin-bottom: 6px;
+    border: 1px solid #aaaaaa;   
+}
+.card:hover
+{
+    transform: scale(1.04);
+    box-shadow: 8px 8px 4px #aaaaaa;
+}
+.row
+{
+    padding: 15px;
+}
+.card-title
+{
+    font-weight: 600;
+}
+.story
+{
+    margin-top: 35px;
+    margin-left: 25px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    max-width: 1400px;
+    transition: transform 0.6s ease;
+    border-radius: 16px;
+}
+.story:hover
+{
+    transform: translateY(-8px);
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.story p{
+    max-width: 1000px;
+    line-height: 30px;
+}
+#story_image
+{
+    border-radius: 16px;
+}
+#para_head
+{
+    padding: 5px;
+    margin-left: -5px;
+    color: #F16341;
+    font-weight: 600;
+}
+.visit
+{
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.visit_para p,.outlet_form
+{
+    margin-left: 15px;
+}
+.outlet_form input,#form_button
+{
+   padding: 10px;
+   border-radius: 20px;
+   font-size: 12px;
+   text-align: center;
+   border: 2px solid #F16341;
+}
+#form_button
+{
+    color: white;
+    background-color: #F16341;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.img_container
+{
+    background-color: #F16341;
+}
+.img_container img
+{
+    position: relative;
+    left: 10%;
+}
+#order_form
+{
+    padding: 15px;
+}
+#signin
+{
+    margin-top: 10px;
+}
+.input_heading
+{
+    padding: 10px;
+    color: #F16341;
+    font-weight: 580;
+}
+.input_heading:hover
+{
+  text-decoration: underline;
+  text-decoration-color: #4C3935;
+}
+.inp_grid
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    margin-top: 20px;
+}
+#drinks_label
+{
+    font-size: larger;
+}
+b
+{
+    font-weight: 400;
+    font-size: larger;
+}
+#pay
+{
+    color: rgb(249, 246, 246);
+    text-decoration: none;
+}
+@media(max-width:600px)
+{
+    .foot 
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .carousel-item img
+    {
+        height:300px;
+    }
+}
+@media(max-width:600px)
+{
+    .carousel-control-prev
+    {
+        display: none;
+    }
+    .carousel-control-next
+    {
+        display: none;
+    }
+}
+@media(max-width:700px)
+{
+    .contain
+{
+    padding: 20px;
+    font-size: large;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.card:hover
+{
+    transform: scale(1.00);
+}
+.card
+{
+    margin-bottom: 20px;
+}
+.menu
+{
+    margin-bottom: 10px;
+}
+.inp_grid
+{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 0px;
+}
+.input_heading
+{
+   margin-top: 25px;
+}
+}
+@media only screen and (max-width:820px) and (min-width:702px)
+{
+    .inp_grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.contain
+{
+    padding: 20px;
+    font-size: large;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+}
+.input_heading
+{
+   margin-top: 25px;
+}
+}
+@media(max-width:1080px)
+{
+    .img_container img
+{
+    width: 50%;
+}
+}
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #a9530888;
+    color: white;
+    width: 100vw;
+}
